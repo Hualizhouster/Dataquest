@@ -1,0 +1,12 @@
+Assign the shape of vector to vector_shape.
+Assign the shape of matrix to matrix_shape.
+Display both vector_shape and matrix_shape using the print() function.
+
+###########
+
+vector = np.array([10, 20, 30])
+matrix = np.array([[5, 10, 15], [20, 25, 30], [35, 40, 45]])
+vector_shape = vector.shape
+print(vector_shape)
+matrix_shape = matrix.shape
+print(matrix_shape)
