@@ -2,8 +2,12 @@ Assign all the rows and the first 2 columns of world_alcohol to first_two_column
 Assign the first 10 rows and the first column of world_alcohol to first_ten_years.
 Assign the first 10 rows and all of the columns of world_alcohol to first_ten_rows.
 
+Assign the first 20 rows of the columns at index 1 and 2 of world_alcohol to first_twenty_regions.
+
 ########
 
 first_two_columns = world_alcohol[:,0:2]
 first_ten_years = world_alcohol[0:10, 0]
 first_ten_rows = world_alcohol[0:10, :]
+
+first_twenty_regions = world_alcohol[0:20, 1:3]
