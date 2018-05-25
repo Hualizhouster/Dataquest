@@ -1,0 +1,18 @@
+Select and display only the columns that use grams for measurement (that end with "(g)"). To accomplish this:
+
+Use the columns attribute to return the column names in food_info and convert to a list by calling the method tolist()
+Create a new list, gram_columns, containing only the column names that end in "(g)". The string method endswith() returns True if the string object calling the method ends with the string passed into the parentheses.
+Pass gram_columns into bracket notation to select just those columns and assign the resulting dataframe to gram_df
+Then use the dataframe method head() to display the first 3 rows of gram_df.
+
+#######################
+
+col_names = food_info.columns.tolist()
+gram_columns = []
+
+for column in col_names:
+    if column.endswith("(g)"):
+        gram_columns.append(column)
+        
+gram_df = food_info[gram_columns]
+print(gram_df.head(3))
